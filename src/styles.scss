@@ -1,0 +1,177 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100% !important;
+  margin: 0px;
+}
+ul{
+  padding-left: 0px;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.header {
+  background: #1C263C;
+
+  .tabs {
+    padding: 0 30px;
+    overflow: visible;
+    border-bottom: 3px solid #e0e0e0;
+
+    .title {
+      font-size: 28px;
+      margin-top: 5px;
+    }
+
+    .navListRight {
+      .navList {
+        list-style: none;
+        padding: 0px 8px;
+      }
+
+      .avatar {
+        margin: 0 12px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        position: relative;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: #5a6eed;
+        cursor: pointer;
+
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          color: #fff !important;
+        }
+      }
+    }
+
+    .navListLeft {
+      list-style: none;
+
+      .title {
+        color: #fff;
+      }
+    }
+  }
+
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    >* {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: calc(33% - 15px);
+    }
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 10px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  }
+
+  .b {
+    height: 120px;
+  }
+
+  .description {
+    margin: 0;
+    max-height: 85px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  .thumbnail-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 1px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  img {
+    border-style: none;
+    vertical-align: middle;
+  }
+
+  .hover-btn {
+    align-items: center;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: center;
+    line-height: 1.2;
+    padding: 16px;
+    text-align: center;
+    &:hover{
+      background-color: #eeeeeeff;
+    }
+  }
+
+  .link{
+    margin-top: 10px;
+    color: blue;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .row {
+    >* {
+      flex-basis: calc(50% - 20px) !important;
+    }
+  }
+  h2{
+    margin-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .row {
+    >* {
+      flex-basis: calc(100%) !important;
+    }
+  }
+  
+}

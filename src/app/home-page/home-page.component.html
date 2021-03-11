@@ -1,0 +1,13 @@
+<h2>Thumbnail Grid View</h2>
+<div class="row">
+  <div class="column" *ngFor="let item of homePage">
+    <div class="thumbnail-content">
+      <img [src]="item.thumbnailUrl" alt="Angular" loading="lazy">
+      <h2 class='hover-btn'>{{ item.title }}</h2>
+      <p class='description'>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        <a class="link" target="_blank" [href]="item.url">View >></a>
+    </div>
+  </div>
+
+</div>
